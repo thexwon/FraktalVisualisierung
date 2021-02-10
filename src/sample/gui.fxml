@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #88ccff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text layoutX="317.0" layoutY="25.0" scaleX="1.5" scaleY="1.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Place at least 2, but up to 20 points inside the canvas and press start." textOrigin="CENTER" wrappingWidth="365.13671875" />
+      <AnchorPane fx:id="canvasAnchor" layoutX="50.0" layoutY="50.0" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #222222;">
+         <children>
+            <Canvas fx:id="canvas" height="650.0" onMouseClicked="#canvasClick" width="900.0" />
+         </children></AnchorPane>
+      <JFXButton id="startButton" layoutX="275.0" layoutY="725.0" onMouseClicked="#buttonActionSTART" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #888888;" text="Start" />
+      <JFXButton id="clearButton" layoutX="625.0" layoutY="725.0" onMouseClicked="#buttonActionCLEAR" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #888888;" text="Clear" />
+   </children>
+</Pane>
